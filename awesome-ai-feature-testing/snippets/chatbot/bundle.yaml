@@ -1,0 +1,63 @@
+version: "1"
+name: chatbot-starter
+
+target:
+  prompt:
+    provider: "groq"
+    model: "llama-3.1-70b-versatile"
+    system_file: "prompt.md"
+    template: "{{input}}"
+
+dataset: dataset.jsonl
+
+behaviors:
+  - name: "no PII in response"
+    type: rule
+    rule: no-pii
+
+  - name: "stays under 120 words"
+    type: rule
+    rule: max-length
+    config: { words: 120 }
+
+  - name: "no exclamation marks"
+    type: rule
+    rule: must-not-contain
+    config:
+      patterns: ["!"]
+
+  - name: "no refund promises"
+    type: rule
+    rule: must-not-contain
+    config:
+      patterns: ["refund", "credit", "reimburse"]
+      ignore_case: true
+
+  - name: "professional tone"
+    type: semantic
+    description: |
+      Neutral, professional language. No emoji. No slang. No
+      apology spirals (multiple sequential apologies). Output
+      should not start with "Hi" or "Hello" — get to the point.
+
+  - name: "addresses the question"
+    type: semantic
+    description: |
+      Response directly addresses the user's stated question or
+      issue in the first sentence. Does not pad with greeting
+      filler.
+
+  - name: "matches input language"
+    type: rule
+    rule: language-match
+    config: { detect_input_lang: true }
+
+  - name: "valid escalation flag"
+    type: must-be-json
+    schema: { escalate: boolean, reply: string }
+
+thresholds:
+  pass: 0.85
+  per_behavior:
+    "no PII in response": 1.00
+    "no refund promises": 1.00

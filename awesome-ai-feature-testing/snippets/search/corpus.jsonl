@@ -1,0 +1,50 @@
+{"id": "doc_01", "text": "The Pro plan costs $99 per month and includes unlimited API calls.", "topic": "pricing"}
+{"id": "doc_02", "text": "Annual billing on the Pro plan saves 20% compared to monthly.", "topic": "pricing"}
+{"id": "doc_03", "text": "Enterprise pricing is custom; contact sales for a quote.", "topic": "pricing"}
+{"id": "doc_04", "text": "The Free tier supports up to 100 API calls per day.", "topic": "pricing"}
+{"id": "doc_05", "text": "Standard shipping takes 3-5 business days within the US.", "topic": "shipping"}
+{"id": "doc_06", "text": "International shipping is 10-21 business days.", "topic": "shipping"}
+{"id": "doc_07", "text": "Express shipping is 1-2 days for an additional $15.", "topic": "shipping"}
+{"id": "doc_08", "text": "We do not ship to PO Boxes.", "topic": "shipping"}
+{"id": "doc_09", "text": "We offer a 14-day money-back guarantee on hardware products.", "topic": "refunds"}
+{"id": "doc_10", "text": "Refunds are processed within 5-7 business days after return.", "topic": "refunds"}
+{"id": "doc_11", "text": "Software subscription refunds are pro-rated within the first 7 days.", "topic": "refunds"}
+{"id": "doc_12", "text": "Items damaged in shipping are replaced or refunded at no cost.", "topic": "refunds"}
+{"id": "doc_13", "text": "To cancel, navigate to Account Settings > Billing > Cancel.", "topic": "cancel"}
+{"id": "doc_14", "text": "Cancellations take effect at the end of the current billing period.", "topic": "cancel"}
+{"id": "doc_15", "text": "There are no early-termination fees on annual plans.", "topic": "cancel"}
+{"id": "doc_16", "text": "After cancellation, your data is retained for 30 days then permanently deleted.", "topic": "cancel"}
+{"id": "doc_17", "text": "We support 32 languages including English, Spanish, French, and German.", "topic": "languages"}
+{"id": "doc_18", "text": "Customer support is available in 12 languages 24/7.", "topic": "languages"}
+{"id": "doc_19", "text": "The mobile app supports auto-translation between supported languages.", "topic": "languages"}
+{"id": "doc_20", "text": "Documentation is available in English, Spanish, Portuguese, and Japanese.", "topic": "languages"}
+{"id": "doc_21", "text": "Two-factor authentication is required for all enterprise accounts.", "topic": "security"}
+{"id": "doc_22", "text": "API keys can be rotated from Account Settings > API Keys.", "topic": "security"}
+{"id": "doc_23", "text": "We use AES-256 encryption for all data at rest.", "topic": "security"}
+{"id": "doc_24", "text": "SSO via SAML 2.0 is available on the Enterprise plan.", "topic": "security"}
+{"id": "doc_25", "text": "Mobile app version 5.4 or later is required.", "topic": "technical"}
+{"id": "doc_26", "text": "iOS support requires iOS 16 or later.", "topic": "technical"}
+{"id": "doc_27", "text": "Android support requires Android 11 or later.", "topic": "technical"}
+{"id": "doc_28", "text": "API rate limits are 1000 requests per minute by default.", "topic": "technical"}
+{"id": "doc_29", "text": "Webhooks support HMAC-SHA256 signatures for verification.", "topic": "technical"}
+{"id": "doc_30", "text": "Our SDK is available for Python, Node.js, Ruby, Go, and Java.", "topic": "technical"}
+{"id": "doc_31", "text": "Trial period is 14 days, no credit card required.", "topic": "pricing"}
+{"id": "doc_32", "text": "Educational discounts of 50% are available for verified students.", "topic": "pricing"}
+{"id": "doc_33", "text": "Non-profit pricing is available — apply via the partnerships page.", "topic": "pricing"}
+{"id": "doc_34", "text": "Same-day shipping is not currently offered.", "topic": "shipping"}
+{"id": "doc_35", "text": "Tracking links are emailed once the package is dispatched.", "topic": "shipping"}
+{"id": "doc_36", "text": "Cancelled subscriptions can be reactivated within 60 days.", "topic": "cancel"}
+{"id": "doc_37", "text": "Bulk refunds for enterprise accounts are processed monthly.", "topic": "refunds"}
+{"id": "doc_38", "text": "Refunds for digital goods are evaluated case by case.", "topic": "refunds"}
+{"id": "doc_39", "text": "Right-to-left language support includes Arabic and Hebrew.", "topic": "languages"}
+{"id": "doc_40", "text": "Mandarin Chinese is supported in both simplified and traditional scripts.", "topic": "languages"}
+{"id": "doc_41", "text": "Compliance certifications include SOC 2 Type II and HIPAA.", "topic": "security"}
+{"id": "doc_42", "text": "Single-tenant deployments are available on the Enterprise plan.", "topic": "security"}
+{"id": "doc_43", "text": "Audit logs are retained for 90 days; longer on request.", "topic": "security"}
+{"id": "doc_44", "text": "GraphQL endpoint is available at api.foolwidget.com/v2.", "topic": "technical"}
+{"id": "doc_45", "text": "Browser support: latest two versions of Chrome, Firefox, Safari, Edge.", "topic": "technical"}
+{"id": "doc_46", "text": "We do not support Internet Explorer.", "topic": "technical"}
+{"id": "doc_47", "text": "Custom domains require a CNAME record pointing to cnames.foolwidget.com.", "topic": "technical"}
+{"id": "doc_48", "text": "Bulk import via CSV is available from Account Settings > Import.", "topic": "technical"}
+{"id": "doc_49", "text": "Data export is available as JSON or Parquet from Account Settings > Export.", "topic": "technical"}
+{"id": "doc_50", "text": "Webhook retries are exponential up to 5 attempts over 24 hours.", "topic": "technical"}

@@ -1,0 +1,30 @@
+{"id": "q01", "query": "How much is the Pro plan?", "gold_doc_ids": ["doc_01", "doc_02"]}
+{"id": "q02", "query": "Free tier limits", "gold_doc_ids": ["doc_04"]}
+{"id": "q03", "query": "How long is shipping in the US?", "gold_doc_ids": ["doc_05"]}
+{"id": "q04", "query": "Can I get expedited shipping?", "gold_doc_ids": ["doc_07"]}
+{"id": "q05", "query": "How do refunds work?", "gold_doc_ids": ["doc_09", "doc_10"]}
+{"id": "q06", "query": "How do I cancel my subscription?", "gold_doc_ids": ["doc_13", "doc_14"]}
+{"id": "q07", "query": "What languages do you support?", "gold_doc_ids": ["doc_17", "doc_18"]}
+{"id": "q08", "query": "Is two-factor auth required?", "gold_doc_ids": ["doc_21"]}
+{"id": "q09", "query": "API rate limits", "gold_doc_ids": ["doc_28"]}
+{"id": "q10", "query": "Which mobile OS do you support?", "gold_doc_ids": ["doc_26", "doc_27"]}
+{"id": "q11", "query": "Can I trial without paying?", "gold_doc_ids": ["doc_31"]}
+{"id": "q12", "query": "Student discount?", "gold_doc_ids": ["doc_32"]}
+{"id": "q13", "query": "Discounts for non-profits", "gold_doc_ids": ["doc_33"]}
+{"id": "q14", "query": "Do you offer same-day delivery?", "gold_doc_ids": ["doc_34"]}
+{"id": "q15", "query": "How do I track my package?", "gold_doc_ids": ["doc_35"]}
+{"id": "q16", "query": "Can I reactivate a cancelled account?", "gold_doc_ids": ["doc_36"]}
+{"id": "q17", "query": "Refunds for software", "gold_doc_ids": ["doc_11", "doc_38"]}
+{"id": "q18", "query": "Right-to-left language support", "gold_doc_ids": ["doc_39"]}
+{"id": "q19", "query": "SOC 2 compliance", "gold_doc_ids": ["doc_41"]}
+{"id": "q20", "query": "Single tenant deployment", "gold_doc_ids": ["doc_42"]}
+{"id": "q21", "query": "How long are audit logs kept?", "gold_doc_ids": ["doc_43"]}
+{"id": "q22", "query": "GraphQL API endpoint", "gold_doc_ids": ["doc_44"]}
+{"id": "q23", "query": "Which browsers are supported?", "gold_doc_ids": ["doc_45"]}
+{"id": "q24", "query": "Do you support IE?", "gold_doc_ids": ["doc_46"]}
+{"id": "q25", "query": "Custom domain setup", "gold_doc_ids": ["doc_47"]}
+{"id": "q26", "query": "Bulk import data via CSV", "gold_doc_ids": ["doc_48"]}
+{"id": "q27", "query": "How do I export my data?", "gold_doc_ids": ["doc_49"]}
+{"id": "q28", "query": "Webhook retry policy", "gold_doc_ids": ["doc_50"]}
+{"id": "q29", "query": "API keys", "gold_doc_ids": ["doc_22"]}
+{"id": "q30", "query": "Encryption at rest", "gold_doc_ids": ["doc_23"]}

@@ -1,0 +1,71 @@
+site_name: Awesome AI Feature Testing
+site_description: Testing patterns, tools, prompts, and eval examples organized by AI feature.
+site_url: https://aftabbs.github.io/awesome-ai-feature-testing
+repo_url: https://github.com/Aftabbs/awesome-ai-feature-testing
+edit_uri: edit/main/
+
+theme:
+  name: material
+  features:
+    - navigation.sections
+    - navigation.expand
+    - navigation.tabs
+    - search.highlight
+    - search.share
+    - content.code.copy
+    - content.action.edit
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light mode
+
+nav:
+  - Home: README.md
+  - "By feature":
+      - Chatbots: features/chatbots.md
+      - RAG: features/rag.md
+      - Summarizers: features/summarizers.md
+      - Code-gen: features/code-gen.md
+      - Image-gen: features/image-gen.md
+      - Voice: features/voice.md
+      - Agents: features/agents.md
+      - Multimodal: features/multimodal.md
+      - Classifiers: features/classifiers.md
+      - Translation: features/translation.md
+      - Search: features/search.md
+  - "Cross-cutting":
+      - Maturity matrix: MATURITY.md
+      - Failure modes: FAILURE-MODES.md
+      - Tool fit: TOOL-FIT.md
+  - Contributing: CONTRIBUTING.md
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - footnotes
+  - tables
+  - toc:
+      permalink: "#"
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true
+
+plugins:
+  - search
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Aftabbs/awesome-ai-feature-testing

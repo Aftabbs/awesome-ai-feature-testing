@@ -1,0 +1,205 @@
+# patterns.yaml — machine-readable index of testing patterns by feature.
+# Refreshed when feature pages change. Other tools can consume this directly.
+#
+# Schema:
+#   features:
+#     <feature_id>:
+#       patterns:
+#         - id: <kebab-case>
+#           name: <short title>
+#           tools: [<tool_id>, ...]
+#           cost: low|medium|high
+#           when: <one-sentence guidance>
+
+features:
+  chatbots:
+    patterns:
+      - id: persona-stability-multi-turn
+        name: Persona stability across turns
+        tools: [behaviorci, promptfoo, deepeval, llm-behave]
+        cost: medium
+        when: Any chatbot with multi-turn conversations.
+      - id: refusal-calibration
+        name: Refusal calibration (over- and under-)
+        tools: [inspect-ai, bloom, giskard, wildguard]
+        cost: medium
+        when: Regulated-domain bots; consumer-facing where over-refusal hurts UX.
+      - id: tone-matching
+        name: Tone matching to context
+        tools: [llm-behave, behaviorci, deepeval]
+        cost: medium
+        when: Customer-facing bots where tone signals brand.
+      - id: pii-redaction-output
+        name: PII redaction in responses
+        tools: [presidio, behaviorci]
+        cost: low
+        when: Always.
+      - id: citation-grounding
+        name: Citation & grounding (if RAG-augmented)
+        tools: [ragas, continuous-eval, phoenix]
+        cost: medium
+        when: When the bot cites sources.
+      - id: length-structure
+        name: Length and structure compliance
+        tools: [promptfoo, behaviorci]
+        cost: low
+        when: When output is parsed downstream or has UI constraints.
+      - id: language-matching
+        name: Language matching
+        tools: [behaviorci, promptfoo]
+        cost: low
+        when: Any multilingual bot.
+      - id: long-context-pressure
+        name: Memory and context-window pressure
+        tools: [longbench, behaviorci, lv-eval]
+        cost: medium
+        when: Multi-turn (>10 turns) or long-context (>8k tokens).
+      - id: jailbreak-resistance
+        name: Jailbreak resistance
+        tools: [garak, pyrit, promptfoo]
+        cost: medium
+        when: Consumer-facing or privileged-tool bots.
+      - id: latency-cost-sla
+        name: Latency and cost SLAs
+        tools: [phoenix, helicone, langfuse, opik]
+        cost: low
+        when: Always in production.
+      - id: sentiment-escalation
+        name: Sentiment-appropriate escalation
+        tools: [vader, behaviorci]
+        cost: low
+        when: Customer-support bots.
+      - id: end-of-session-quality
+        name: Conversation-end satisfaction
+        tools: [phoenix, langfuse, lmarena]
+        cost: medium
+        when: Session-based bots with explicit conversation end.
+
+  rag:
+    patterns:
+      - { id: retrieval-recall-at-k, name: "Retrieval recall@k", tools: [beir, ragas], cost: medium, when: "Always." }
+      - { id: retrieval-precision-diversity, name: "Retrieval precision and source diversity", tools: [ragas, phoenix], cost: medium, when: "Tight context windows or long chunks." }
+      - { id: groundedness-faithfulness, name: "Groundedness / faithfulness", tools: [ragas, deepeval, trulens, phoenix], cost: high, when: "Always for factual answers." }
+      - { id: citation-correctness, name: "Citation correctness", tools: [behaviorci, deepeval], cost: medium, when: "When citations surface to users." }
+      - { id: empty-retrieval-handling, name: "Hallucination on no-result", tools: [ragtruth, behaviorci], cost: medium, when: "Always." }
+      - { id: tenant-scope-isolation, name: "Tenant / scope isolation", tools: [behaviorci], cost: low, when: "Any multi-tenant SaaS." }
+      - { id: query-rewrite-quality, name: "Query rewriting quality", tools: [beir, ragas], cost: medium, when: "When rewriting queries." }
+      - { id: chunk-quality, name: "Chunk quality (offline)", tools: [chunking-evaluation], cost: medium, when: "Any time you change chunking." }
+      - { id: index-time-pii, name: "Index-time PII", tools: [presidio], cost: high, when: "RAG over corporate / customer data." }
+      - { id: reranker-power, name: "Reranker discriminative power", tools: [beir], cost: medium, when: "Auditing reranker value." }
+      - { id: multi-hop, name: "Cross-doc reasoning (multi-hop)", tools: [hotpotqa, musique, longbench], cost: medium, when: "Analytical / synthesis questions." }
+      - { id: recency-awareness, name: "Date / recency awareness", tools: [behaviorci], cost: low, when: "Aging corpus." }
+      - { id: cost-decomposition, name: "Cost per call decomposition", tools: [phoenix, langfuse, opik, helicone], cost: low, when: "Always." }
+      - { id: e2e-quality, name: "End-to-end answer quality", tools: [ragas, continuous-eval, behaviorci, deepeval], cost: high, when: "Required for shipping." }
+
+  summarizers:
+    patterns:
+      - { id: faithfulness, name: "Faithfulness (no hallucinated facts)", tools: [factscore, summeval, deepeval, ragas], cost: medium, when: "Always." }
+      - { id: coverage, name: "Coverage (no important info dropped)", tools: [sumeval, bertscore], cost: medium, when: "When spec lists key points." }
+      - { id: length-compliance, name: "Length compliance", tools: [behaviorci, promptfoo], cost: low, when: "Any length-bounded feature." }
+      - { id: action-item-integrity, name: "Action-item integrity", tools: [behaviorci], cost: medium, when: "Action-extracting summarizers." }
+      - { id: style-tone, name: "Style / tone preservation", tools: [llm-behave, deepeval], cost: medium, when: "Email rewriters; brand-voice tools." }
+      - { id: anti-padding, name: "Anti-padding", tools: [behaviorci], cost: low, when: "Any summarizer where filler degrades trust." }
+      - { id: source-attribution, name: "Source-attribution preservation", tools: [deepeval], cost: medium, when: "Multi-speaker / multi-author input." }
+      - { id: pii-output, name: "PII redaction in output", tools: [presidio, behaviorci], cost: low, when: "Always when summarizing user content." }
+      - { id: translation-drift, name: "Translation drift", tools: [bertscore], cost: medium, when: "Cross-lingual summarizers." }
+
+  code-gen:
+    patterns:
+      - { id: compile-clean, name: "Compilation / parse-clean", tools: [behaviorci, deepeval, promptfoo], cost: low, when: "Always." }
+      - { id: lint-clean, name: "Lint clean", tools: [ruff, eslint, clippy, golangci-lint], cost: low, when: "Always." }
+      - { id: type-check, name: "Type-check pass", tools: [mypy, pyright, tsc], cost: low, when: "Typed languages." }
+      - { id: test-execution, name: "Test execution", tools: [humaneval, mbpp, swe-bench, livecodebench], cost: medium, when: "When you can sandbox." }
+      - { id: cross-ref-consistency, name: "Cross-reference consistency", tools: [behaviorci], cost: medium, when: "Multi-file generation." }
+      - { id: no-secrets-unsafe, name: "No-secrets / no-unsafe-primitives", tools: [trufflehog, gitleaks, behaviorci], cost: low, when: "Always." }
+      - { id: vuln-deps, name: "Vulnerability check (deps)", tools: [osv, snyk, dependabot], cost: low, when: "Always." }
+      - { id: edit-precision, name: "Diff/edit precision", tools: [aider-leaderboard], cost: medium, when: "Editing-style features." }
+      - { id: style-match, name: "Style match", tools: [behaviorci], cost: medium, when: "Refactoring features." }
+      - { id: behavior-preservation, name: "Behavior preservation", tools: [behaviorci], cost: medium, when: "Refactoring features." }
+      - { id: review-prf1, name: "Code review precision/recall", tools: [crsurvey, swe-bench], cost: high, when: "Code-review features." }
+
+  image-gen:
+    patterns:
+      - { id: prompt-fidelity, name: "Prompt fidelity", tools: [vbench, t2i-compbench, genai-bench], cost: high, when: "Always." }
+      - { id: compositional-accuracy, name: "Compositional accuracy", tools: [t2i-compbench, dsg], cost: high, when: "Multi-object prompts." }
+      - { id: aesthetic-quality, name: "Aesthetic / quality scoring", tools: [laion-aesthetic, hpsv2, pickscore, imagereward], cost: medium, when: "Always." }
+      - { id: nsfw-safety, name: "Safety / NSFW classification", tools: [nudenet, sd-safety-checker], cost: low, when: "Always for user-facing." }
+      - { id: style-consistency, name: "Style consistency", tools: [clip, dino, dreamsim], cost: medium, when: "Brand / character consistency." }
+      - { id: identity-consistency, name: "Identity / face consistency", tools: [insightface, arcface], cost: medium, when: "Same-person tasks." }
+      - { id: text-in-image, name: "Hallucinated text in image", tools: [tesseract, easyocr], cost: low, when: "Always." }
+      - { id: diversity, name: "Diversity / mode coverage", tools: [fid, cmmd], cost: medium, when: "Catalog/category prompts." }
+
+  voice:
+    patterns:
+      - { id: asr-wer, name: "WER", tools: [jiwer, whisper, speechbrain], cost: low, when: "Always for ASR." }
+      - { id: asr-cer, name: "CER (locale-aware)", tools: [jiwer], cost: low, when: "CJK / Arabic." }
+      - { id: asr-stratified, name: "Domain & accent stratification", tools: [common-voice, voxpopuli, ami], cost: medium, when: "Production ASR." }
+      - { id: tts-mos, name: "TTS pseudo-MOS", tools: [utmos, speechmetrics, mosnet], cost: medium, when: "TTS." }
+      - { id: tts-roundtrip, name: "TTS intelligibility", tools: [whisper, jiwer], cost: low, when: "TTS." }
+      - { id: tts-pronunciation, name: "Pronunciation correctness", tools: [espeak-ng], cost: medium, when: "Brand / proper-noun-heavy." }
+      - { id: voice-intent, name: "End-to-end intent capture", tools: [behaviorci], cost: medium, when: "Voice agents." }
+      - { id: voice-pii, name: "Audio PII redaction", tools: [presidio], cost: medium, when: "Production voice." }
+      - { id: voice-wakeword, name: "Wakeword false-positive / negative", tools: [porcupine, openwakeword], cost: medium, when: "On-device wake-word." }
+
+  agents:
+    patterns:
+      - { id: tool-call-correctness, name: "Tool-call correctness", tools: [bfcl, behaviorci], cost: medium, when: "Any tool-using agent." }
+      - { id: tool-selection, name: "Tool-selection accuracy", tools: [bfcl, tau-bench], cost: medium, when: "Multi-tool agents." }
+      - { id: loop-bound, name: "Loop-bound enforcement", tools: [behaviorci], cost: low, when: "Always." }
+      - { id: state-memory, name: "State / memory consistency", tools: [swe-bench, gaia], cost: high, when: "Multi-turn agents." }
+      - { id: trajectory-quality, name: "Plan / trajectory quality", tools: [agentbench], cost: high, when: "Multi-step agents." }
+      - { id: subagent-dispatch, name: "Subagent dispatch correctness", tools: [behaviorci], cost: medium, when: "Multi-agent systems." }
+      - { id: final-answer, name: "Final answer quality", tools: [behaviorci, deepeval], cost: medium, when: "Always." }
+      - { id: no-prohibited, name: "No-prohibited-action", tools: [behaviorci], cost: low, when: "Privileged-tool agents." }
+      - { id: cost-bounded, name: "Cost-bounded execution", tools: [phoenix, langfuse], cost: low, when: "Always." }
+      - { id: error-recovery, name: "Error recovery", tools: [inspect-ai], cost: medium, when: "Production agents." }
+      - { id: browser-use, name: "Browser / computer-use specific", tools: [webarena, webvoyager, visualwebarena, osworld], cost: high, when: "Browser/computer agents." }
+      - { id: adversarial-robustness, name: "Adversarial robustness", tools: [garak, pyrit, injecagent], cost: high, when: "Production agents." }
+      - { id: agent-citations, name: "Citation / attribution", tools: [behaviorci], cost: medium, when: "Research agents." }
+
+  multimodal:
+    patterns:
+      - { id: vision-text-alignment, name: "Vision-text alignment", tools: [clipscore, blipscore, vqascore, vbench], cost: medium, when: "Captioning / VQA." }
+      - { id: vqa-accuracy, name: "VQA accuracy", tools: [vqav2, gqa, textvqa, docvqa], cost: medium, when: "VQA features." }
+      - { id: doc-understanding, name: "Document understanding", tools: [docvqa, infographicvqa, chartqa], cost: medium, when: "Document AI." }
+      - { id: counting-spatial, name: "Counting & spatial reasoning", tools: [countbench], cost: medium, when: "Visual reasoning." }
+      - { id: hallucination-vision, name: "Hallucination on absent objects", tools: [pope, hallusionbench], cost: medium, when: "Always." }
+      - { id: cross-modal-robust, name: "Cross-modal robustness", tools: [adversarial-vqa], cost: high, when: "Production VLMs." }
+      - { id: bias-fairness-vlm, name: "Bias / fairness across demographics", tools: [facet, vlbiasbench], cost: high, when: "Always." }
+      - { id: audio-lm, name: "Audio-LM tasks", tools: [audiocaps, audiobench], cost: medium, when: "Audio understanding features." }
+
+  classifiers:
+    patterns:
+      - { id: per-class-f1, name: "Per-class accuracy / F1", tools: [scikit-learn, evidently], cost: low, when: "Always." }
+      - { id: macro-vs-micro, name: "Macro-F1 vs micro-F1", tools: [scikit-learn], cost: low, when: "Class imbalance." }
+      - { id: calibration, name: "Calibration", tools: [scikit-learn, netcal], cost: medium, when: "Confidence-using downstream." }
+      - { id: schema-validity, name: "Schema validity (JSON extractors)", tools: [jsonschema, pydantic, behaviorci], cost: low, when: "Structured outputs." }
+      - { id: field-accuracy, name: "Field-level accuracy", tools: [behaviorci], cost: medium, when: "Structured extraction." }
+      - { id: ner-prf1, name: "NER P/R/F1", tools: [seqeval, spacy], cost: medium, when: "NER." }
+      - { id: locale-parity-cls, name: "Locale parity", tools: [behaviorci], cost: medium, when: "Multilingual classifiers." }
+      - { id: cls-latency, name: "Latency at scale", tools: [k6, locust, wrk2], cost: low, when: "Production." }
+      - { id: adversarial-robustness-cls, name: "Adversarial robustness", tools: [textattack, garak], cost: high, when: "Production." }
+      - { id: drift-detection, name: "Concept drift detection", tools: [evidently, alibi-detect, nannyml], cost: medium, when: "Long-running production." }
+
+  translation:
+    patterns:
+      - { id: surface-overlap, name: "BLEU / chrF / METEOR", tools: [sacrebleu, chrf, meteor], cost: low, when: "Baseline." }
+      - { id: learned-metrics, name: "COMET / BLEURT", tools: [comet, bleurt], cost: medium, when: "Always." }
+      - { id: error-spans, name: "xCOMET / fine-grained errors", tools: [xcomet, mqm], cost: high, when: "Production translation." }
+      - { id: terminology-consistency, name: "Terminology consistency", tools: [trados, memoq], cost: medium, when: "Domain-specific." }
+      - { id: register-style, name: "Style / register preservation", tools: [llm-behave], cost: medium, when: "Tone-preserving translation." }
+      - { id: pii-translation, name: "PII redaction across translation", tools: [presidio], cost: medium, when: "User content." }
+      - { id: roundtrip-stability, name: "Round-trip stability", tools: [bertscore], cost: medium, when: "Audit." }
+      - { id: domain-specific-mt, name: "Domain-specific accuracy", tools: [medical-mt-benchmarks, lextreme], cost: high, when: "Legal / medical / financial." }
+
+  search:
+    patterns:
+      - { id: recall-at-k, name: "Recall@k", tools: [beir, trec-eval, mteb], cost: low, when: "Always." }
+      - { id: precision-at-k, name: "Precision@k", tools: [beir, trec-eval], cost: low, when: "Always." }
+      - { id: ndcg, name: "NDCG@k / MRR", tools: [scikit-learn, trec-eval, beir], cost: low, when: "Ranked features." }
+      - { id: catalogue-coverage, name: "Coverage / catalogue diversity", tools: [behaviorci], cost: medium, when: "Recommendation features." }
+      - { id: embedding-quality, name: "Semantic similarity quality", tools: [mteb, beir, senteval], cost: medium, when: "Embedding-based search." }
+      - { id: hybrid-blend, name: "Hybrid blend tuning", tools: [vespa, scikit-learn], cost: medium, when: "BM25 + dense hybrid." }
+      - { id: personalization, name: "Personalization quality", tools: [recbole, cornac], cost: medium, when: "Recommendation features." }
+      - { id: cold-start, name: "Cold-start performance", tools: [recbole], cost: medium, when: "User-aware features." }
+      - { id: search-latency, name: "Latency at scale", tools: [k6, locust], cost: low, when: "Production search." }

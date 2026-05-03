@@ -1,0 +1,5 @@
+{"id": "task_001", "task": "What is 1234 * 567?", "expected_tools": ["calculator"]}
+{"id": "task_002", "task": "What's the weather in Paris right now?", "expected_tools": ["weather"]}
+{"id": "task_003", "task": "Compute 123 + 456 and tell me the weather in Tokyo.", "expected_tools": ["calculator", "weather"]}
+{"id": "task_004", "task": "What's on my calendar for 2026-05-02?", "expected_tools": ["calendar_check"]}
+{"id": "task_005", "task": "What's 2 + 2?", "expected_tools": ["calculator"]}

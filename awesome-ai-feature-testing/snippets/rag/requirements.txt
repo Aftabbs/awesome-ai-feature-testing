@@ -1,0 +1,5 @@
+ragas>=0.2.0
+openai>=1.55.0
+sentence-transformers>=3.0.0
+numpy>=1.26.0
+datasets>=3.0.0

@@ -1,0 +1,6 @@
+{"id": "case_001", "input": "How long does it take to get a refund?", "expected_doc_ids": ["doc_01"]}
+{"id": "case_002", "input": "How much does the Pro plan cost?", "expected_doc_ids": ["doc_04"]}
+{"id": "case_003", "input": "How do I cancel my subscription?", "expected_doc_ids": ["doc_05"]}
+{"id": "case_004", "input": "What languages do you support?", "expected_doc_ids": ["doc_03"]}
+{"id": "case_005", "input": "Do you offer same-day delivery?", "expected_doc_ids": ["doc_02"]}
+{"id": "case_006", "input": "Do you sell coffee beans?"}

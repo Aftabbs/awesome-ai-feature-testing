@@ -1,0 +1,44 @@
+version: "1"
+name: summarizer-starter
+
+target:
+  prompt:
+    provider: "openai"
+    model: "gpt-4o-mini"
+    system_file: "prompt.md"
+    template: "Article:\n{{input}}"
+
+dataset: dataset.jsonl
+
+behaviors:
+  - name: "summary length 50-120 words"
+    type: rule
+    rule: word-range
+    config: { min: 50, max: 120 }
+
+  - name: "no padding phrases"
+    type: rule
+    rule: must-not-contain
+    config:
+      patterns:
+        - "(?i)the article discusses"
+        - "(?i)the author writes about"
+        - "(?i)several points are raised"
+        - "(?i)valuable insights"
+        - "(?i)productive (meeting|discussion)"
+
+  - name: "faithful to source"
+    type: semantic
+    description: |
+      Every numeric claim, name, date, and quote in the summary is supported
+      by the source article. No fabrications. If the source is approximate
+      ('about 50 customers'), the summary should not be precise ('exactly 52
+      customers').
+
+  - name: "no exclamation marks"
+    type: rule
+    rule: must-not-contain
+    config: { patterns: ["!"] }
+
+thresholds:
+  pass: 0.85

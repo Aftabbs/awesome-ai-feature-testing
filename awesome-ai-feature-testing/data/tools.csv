@@ -1,0 +1,242 @@
+tool_id,name,url,categories,license,description
+behaviorci,BehaviorCI,https://github.com/Aftabbs/BehaviourCI,"chatbot;rag;summarizer;code-gen;image-gen;voice;agent;multimodal;classifier;translation;search",MIT,YAML behavior bundles with rule + semantic checks. GitHub Action posts PR comments and blocks merges. Provider-agnostic.
+deepeval,DeepEval,https://github.com/confident-ai/deepeval,"chatbot;rag;summarizer;code-gen;multimodal;classifier;translation;search",Apache-2.0,Pytest-style LLM assertions; ConversationalGEval is one of the strongest multi-turn judges in OSS.
+promptfoo,Promptfoo,https://github.com/promptfoo/promptfoo,"chatbot;rag;summarizer;code-gen;classifier",MIT,Eval-as-code in YAML or JS. Strong CLI; integrates with most CI.
+inspect-ai,Inspect AI,https://github.com/UKGovernmentBEIS/inspect_ai,"chatbot;rag;summarizer;code-gen;voice;agent;multimodal;classifier;translation",MIT,UK AISI's framework for LLM evaluations. Best fit for safety-critical features.
+openevals,OpenEvals,https://github.com/langchain-ai/openevals,"chatbot;rag;summarizer;classifier;translation",MIT,LangChain's readymade evaluators for LLM apps.
+ragas,RAGAS,https://github.com/explodinggradients/ragas,"rag;search",Apache-2.0,Purpose-built RAG eval. Faithfulness; answer-relevance; context-precision; context-recall.
+trulens,trulens,https://github.com/truera/trulens,rag,MIT,Feedback functions for RAG observability.
+phoenix,Phoenix,https://github.com/Arize-ai/phoenix,"chatbot;rag;summarizer;code-gen;voice;agent;multimodal;classifier;translation;search",ELv2,Arize's open-source AI observability and evaluation platform.
+langfuse,Langfuse,https://github.com/langfuse/langfuse,"chatbot;rag;summarizer;code-gen;voice;agent;multimodal;classifier;translation;search",MIT,Open source LLM engineering platform with observability + evals.
+opik,Opik,https://github.com/comet-ml/opik,"chatbot;rag;summarizer;code-gen;agent;multimodal;classifier;translation;search",Apache-2.0,Debug evaluate and monitor LLM apps with tracing and dashboards.
+helicone,Helicone,https://github.com/Helicone/helicone,"chatbot;rag;summarizer;code-gen;agent;classifier;translation;search",Apache-2.0,Open source LLM observability with one line of code.
+evidently,Evidently,https://github.com/evidentlyai/evidently,"classifier;chatbot;summarizer;rag",Apache-2.0,Open-source ML and LLM observability framework — evaluate test and monitor.
+giskard,Giskard OSS,https://github.com/Giskard-AI/giskard-oss,"chatbot;summarizer;classifier",Apache-2.0,Open-source evaluation and testing library for LLM agents with bias / refusal calibration.
+garak,Garak,https://github.com/leondz/garak,"chatbot;agent",Apache-2.0,LLM vulnerability scanner for jailbreaks and prompt injection.
+pyrit,PyRIT,https://github.com/Azure/PyRIT,"chatbot;agent",MIT,Microsoft's red-team automation toolkit.
+continuous-eval,continuous-eval,https://github.com/relari-ai/continuous-eval,"chatbot;rag;summarizer;classifier",Apache-2.0,Data-driven evaluation framework with cost-aware metrics for LLM apps.
+lm-evaluation-harness,lm-evaluation-harness,https://github.com/EleutherAI/lm-evaluation-harness,"summarizer;code-gen;multimodal;classifier;translation",MIT,EleutherAI's framework for few-shot evaluation of language models.
+olmes,OLMES,https://github.com/allenai/olmes,"summarizer;code-gen;classifier;translation",Apache-2.0,Reproducible flexible LLM evaluations from AI2.
+opencompass,OpenCompass,https://github.com/open-compass/opencompass,"summarizer;code-gen;multimodal;classifier;translation",Apache-2.0,LLM evaluation platform supporting a wide range of models over 100+ datasets.
+inspect-evals,Inspect Evals,https://github.com/UKGovernmentBEIS/inspect_evals,"chatbot;agent;multimodal",MIT,Curated set of evals for Inspect AI.
+behavioral-eval,llm-behave,https://github.com/Swanand33/llm-behave,"chatbot",MIT,Pytest plugin for behavioral testing with semantic assertions and tone detection. Offline transformer models.
+bloom,Bloom,https://github.com/safety-research/bloom,"chatbot",MIT,Evaluate any behavior immediately.
+vivaria,Vivaria,https://github.com/METR/vivaria,"chatbot;agent",MIT,METR's tool for running evaluations and conducting agent elicitation research.
+harbor,Harbor,https://github.com/harbor-framework/harbor,agent,MIT,Framework for running agent evaluations and creating RL environments.
+agentbench,AgentBench,https://github.com/THUDM/AgentBench,agent,Apache-2.0,Comprehensive agent benchmark.
+gaia,GAIA,https://huggingface.co/datasets/gaia-benchmark/GAIA,agent,Apache-2.0,General AI assistants benchmark dataset.
+tau-bench,TauBench,https://github.com/sierra-research/tau-bench,agent,MIT,Tool-using agent benchmark.
+bfcl,BFCL,https://gorilla.cs.berkeley.edu/blogs/8_berkeley_function_calling_leaderboard.html,agent,Apache-2.0,Berkeley Function Calling Leaderboard.
+toolbench,ToolBench,https://github.com/OpenBMB/ToolBench,agent,Apache-2.0,Tool-using LLM training and evaluation.
+webarena,WebArena,https://github.com/web-arena-x/webarena,agent,Apache-2.0,Realistic web tasks for browser agents.
+visualwebarena,VisualWebArena,https://github.com/web-arena-x/visualwebarena,agent,Apache-2.0,Visual variant of WebArena.
+webvoyager,WebVoyager,https://github.com/MinorJerry/WebVoyager,agent,Apache-2.0,Multimodal browser agent.
+osworld,OSWorld,https://github.com/xlang-ai/OSWorld,agent,Apache-2.0,Full OS desktop benchmark.
+mind2web,Mind2Web,https://github.com/OSU-NLP-Group/Mind2Web,agent,MIT,Generalist web agent benchmark.
+browsergym,BrowserGym,https://github.com/ServiceNow/BrowserGym,agent,Apache-2.0,Gym for browser agents.
+swe-bench,SWE-Bench,https://github.com/princeton-nlp/SWE-bench,"code-gen;agent",MIT,Real-world GitHub issues benchmark.
+livecodebench,LiveCodeBench,https://github.com/LiveCodeBench/LiveCodeBench,code-gen,Apache-2.0,Contamination-free coding benchmark.
+bigcodebench,BigCodeBench,https://github.com/bigcode-project/bigcodebench,code-gen,Apache-2.0,Practical task solving benchmark for code-gen.
+classeval,ClassEval,https://github.com/FudanSELab/ClassEval,code-gen,Apache-2.0,Class-level code-gen benchmark.
+codecontests,CodeContests,https://github.com/google-deepmind/code_contests,code-gen,Apache-2.0,Competitive programming benchmark.
+ds-1000,DS-1000,https://github.com/HKUNLP/DS-1000,code-gen,MIT,Data science specific code-gen benchmark.
+humaneval,HumanEval,https://github.com/openai/human-eval,code-gen,MIT,OpenAI's classic code-gen benchmark.
+mbpp,MBPP,https://github.com/google-research/google-research/tree/master/mbpp,code-gen,Apache-2.0,Google's beginner Python problems.
+aider,Aider polyglot leaderboard,https://aider.chat/docs/leaderboards/,code-gen,Apache-2.0,Multi-language edit-format eval.
+inject-agent,InjecAgent,https://github.com/uiuc-kang-lab/InjecAgent,agent,MIT,Prompt injection on tool outputs.
+agentdojo,AgentDojo,https://github.com/ethz-spylab/agentdojo,agent,MIT,Adversarial agent eval.
+e2b,E2B,https://github.com/e2b-dev/E2B,"code-gen;agent",MIT,Code-interpreter sandbox.
+modal,Modal,https://modal.com/,code-gen,Closed-Source,Fast serverless sandbox.
+daytona,Daytona,https://github.com/daytonaio/daytona,code-gen,Apache-2.0,Dev-environment-as-a-service.
+trufflehog,trufflehog,https://github.com/trufflesecurity/trufflehog,code-gen,AGPL-3.0,Secret detection.
+gitleaks,gitleaks,https://github.com/gitleaks/gitleaks,code-gen,MIT,Secret scanning.
+osv,OSV,https://osv.dev/,code-gen,Apache-2.0,Vulnerability lookup database.
+bandit,Bandit,https://github.com/PyCQA/bandit,code-gen,Apache-2.0,Python security linter.
+semgrep,Semgrep,https://github.com/semgrep/semgrep,code-gen,LGPL-2.1,Static analysis with custom rules.
+factscore,FActScore,https://github.com/shmsw25/FActScore,summarizer,MIT,Atomic-fact factuality scorer.
+sumeval,SumEval,https://github.com/chakki-works/sumeval,summarizer,Apache-2.0,Multilingual summarization eval (ROUGE BLEU METEOR CIDEr).
+summeval,SummEval,https://github.com/Yale-LILY/SummEval,summarizer,MIT,Yale's framework: coherence consistency fluency relevance.
+qags,QAGS,https://github.com/W4ngatang/qags,summarizer,MIT,Question-answering-based factuality.
+frank,FRANK,https://github.com/artidoro/frank,summarizer,MIT,Factuality typology.
+bertscore,BERTScore,https://github.com/Tiiiger/bert_score,"summarizer;translation",MIT,Semantic similarity metric.
+bleurt,BLEURT,https://github.com/google-research/bleurt,"summarizer;translation",Apache-2.0,Learned metric for generation quality.
+moverscore,MoverScore,https://github.com/AIPHES/emnlp19-moverscore,summarizer,MIT,Earth-mover's distance over embeddings.
+sacrebleu,sacreBLEU,https://github.com/mjpost/sacrebleu,translation,Apache-2.0,Reproducible BLEU scoring.
+comet,COMET,https://github.com/Unbabel/COMET,translation,Apache-2.0,Learned MT metric.
+xcomet,xCOMET,https://github.com/Unbabel/COMET,translation,Apache-2.0,Fine-grained MT error spans.
+chrf,chrF,https://github.com/m-popovic/chrF,translation,Apache-2.0,Character F-score.
+meteor,METEOR,https://github.com/cmu-mtlab/meteor,translation,LGPL-2.1,Translation eval metric.
+mqm,MQM,https://themqm.org/,translation,Open,Multidimensional Quality Metrics schema for error annotation.
+nllb-toolkit,NLLB Toolkit,https://github.com/facebookresearch/fairseq/tree/nllb,translation,MIT,Meta's MT framework with eval.
+fleurs,FLEURS,https://huggingface.co/datasets/google/fleurs,"translation;voice",CC-BY-4.0,102-language ASR / speech translation dataset.
+flores-200,FLORES-200,https://github.com/facebookresearch/flores,translation,CC-BY-SA-4.0,200-language multi-parallel.
+tatoeba,Tatoeba,https://github.com/Helsinki-NLP/Tatoeba-Challenge,translation,CC-BY-2.0,Multilingual sentence pairs.
+opus,OPUS,https://opus.nlpl.eu/,translation,Open,Large multilingual corpus collection.
+covost,CoVoST,https://github.com/facebookresearch/covost,"translation;voice",CC-BY-NC-4.0,Speech-to-text translation.
+paracrawl,ParaCrawl,https://www.paracrawl.eu/,translation,CC0,Web-crawled parallel data.
+trados,Trados Studio TM,https://www.trados.com/,translation,Closed-Source,Industry-standard CAT tool.
+omegat,OmegaT,https://omegat.org/,translation,GPL-3.0,Open-source CAT tool.
+jiwer,JiWER,https://github.com/jitsi/jiwer,voice,Apache-2.0,WER and CER calculation.
+whisper,Whisper,https://github.com/openai/whisper,voice,MIT,OpenAI's ASR with eval scripts.
+whispercpp,whisper.cpp,https://github.com/ggerganov/whisper.cpp,voice,MIT,Efficient Whisper implementation.
+faster-whisper,Faster-Whisper,https://github.com/SYSTRAN/faster-whisper,voice,MIT,Faster OSS port of Whisper.
+nemo,NeMo,https://github.com/NVIDIA/NeMo,voice,Apache-2.0,NVIDIA's speech and NLP toolkit.
+speechbrain,SpeechBrain,https://github.com/speechbrain/speechbrain,voice,Apache-2.0,Speech processing toolkit with many evaluators.
+espnet,ESPnet,https://github.com/espnet/espnet,voice,Apache-2.0,End-to-end speech processing.
+utmos,UTMOS,https://github.com/sarulab-speech/UTMOS22,voice,MIT,Predicted MOS for TTS.
+speechmetrics,SpeechMetrics,https://github.com/aliutkus/speechmetrics,voice,MIT,Package wrapping many speech metrics.
+nisqa,NISQA,https://github.com/gabrielmittag/NISQA,voice,MIT,Speech quality assessment.
+coqui-tts,Coqui TTS,https://github.com/coqui-ai/TTS,voice,MPL-2.0,TTS framework with eval support.
+porcupine,Porcupine,https://github.com/Picovoice/porcupine,voice,Apache-2.0,Wake-word engine and benchmark.
+openwakeword,openWakeWord,https://github.com/dscripka/openWakeWord,voice,Apache-2.0,Open-source wake-word detection.
+common-voice,Common Voice,https://github.com/common-voice/common-voice,voice,CC0-1.0,Mozilla's multilingual ASR dataset.
+voxpopuli,VoxPopuli,https://github.com/facebookresearch/voxpopuli,voice,CC0,Multilingual EU parliament dataset.
+gigaspeech,GigaSpeech,https://github.com/SpeechColab/GigaSpeech,voice,Apache-2.0,Large-scale English ASR dataset.
+chime-7,CHiME-7,https://www.chimechallenge.org/current/index,voice,CC,Challenging real-world dataset.
+ami,AMI,https://huggingface.co/datasets/edinburghcstr/ami,voice,CC-BY-4.0,Meeting recordings dataset.
+vocalsound,VocalSound,https://github.com/YuanGongND/vocalsound,voice,CC-BY-SA-4.0,Non-speech vocal sounds dataset.
+librispeech,LibriSpeech,https://www.openslr.org/12/,voice,CC-BY-4.0,Read English speech dataset.
+beir,BEIR,https://github.com/beir-cellar/beir,"rag;search",Apache-2.0,Heterogeneous IR benchmark.
+mteb,MTEB,https://github.com/embeddings-benchmark/mteb,"rag;search;multimodal",Apache-2.0,Embedding model benchmark.
+trec-eval,trec_eval,https://github.com/usnistgov/trec_eval,search,GPL,NIST classic IR eval tool.
+ir-datasets,ir_datasets,https://github.com/allenai/ir_datasets,search,Apache-2.0,Standardized IR datasets.
+ranx,ranx,https://github.com/AmenRa/ranx,search,MIT,Fast IR evaluation library.
+recbole,RecBole,https://github.com/RUCAIBox/RecBole,search,MIT,Recommendation toolbox.
+cornac,Cornac,https://github.com/PreferredAI/cornac,search,Apache-2.0,Multimodal recommender library.
+implicit,implicit,https://github.com/benfred/implicit,search,MIT,Implicit-feedback collaborative filtering.
+ann-benchmarks,ANN-Benchmarks,https://github.com/erikbern/ann-benchmarks,search,MIT,ANN performance benchmark.
+big-ann-benchmarks,Big-ANN-Benchmarks,https://github.com/harsha-simhadri/big-ann-benchmarks,search,MIT,Billion-scale ANN benchmark.
+vespa,Vespa,https://github.com/vespa-engine/vespa,search,Apache-2.0,Search engine with strong eval tooling.
+elasticsearch,Elasticsearch,https://github.com/elastic/elasticsearch,search,Elastic-2.0,Search engine with ML evaluator.
+opensearch,OpenSearch,https://github.com/opensearch-project/OpenSearch,search,Apache-2.0,Fork with native vector support.
+chunking-evaluation,chunking_evaluation,https://github.com/brandonstarxel/chunking_evaluation,rag,MIT,Chroma's chunking eval framework.
+unstructured,unstructured,https://github.com/Unstructured-IO/unstructured,rag,Apache-2.0,Quality of doc parsing.
+ragtruth,RAGTruth,https://huggingface.co/datasets/wandb/RAGTruth-processed,rag,Apache-2.0,Labeled hallucination dataset.
+hotpotqa,HotpotQA,https://github.com/hotpotqa/hotpot,rag,CC-BY-SA-4.0,Multi-hop QA dataset.
+musique,MuSiQue,https://github.com/StonyBrookNLP/musique,rag,CC-BY-4.0,Composable multi-hop questions.
+2wikimultihop,2WikiMultiHopQA,https://github.com/Alab-NII/2wikimultihop,rag,Apache-2.0,Multi-hop dataset.
+longbench,LongBench,https://github.com/THUDM/LongBench,"rag;chatbot",MIT,Long-context benchmark.
+lv-eval,LV-Eval,https://github.com/infinigence/LVEval,"rag;chatbot",Apache-2.0,Long-context eval.
+lynx,Lynx,https://github.com/PatronusAI/Lynx,rag,CC-BY-NC,Hallucination detection by Patronus.
+pinecone,Pinecone,https://www.pinecone.io/,rag,Closed-Source,Vector store with metadata filter.
+qdrant,Qdrant,https://github.com/qdrant/qdrant,rag,Apache-2.0,Open-source vector store.
+weaviate,Weaviate,https://github.com/weaviate/weaviate,rag,BSD-3-Clause,Open-source vector store.
+chroma,Chroma,https://github.com/chroma-core/chroma,rag,Apache-2.0,Open-source embedding database.
+cohere-rerank,Cohere Rerank,https://docs.cohere.com/docs/rerank-overview,rag,Closed-Source,Reranker API.
+mxbai-rerank,mxbai-rerank,https://huggingface.co/mixedbread-ai/mxbai-rerank-large-v1,rag,Apache-2.0,Open-source reranker.
+vbench,VBench,https://github.com/Vchitect/VBench,image-gen,Apache-2.0,Comprehensive video generation eval (16 dimensions).
+t2i-compbench,T2I-CompBench,https://github.com/Karine-Huang/T2I-CompBench,image-gen,MIT,Compositionality benchmark.
+genai-bench,GenAI-Bench,https://github.com/linzhiqiu/genai-bench,image-gen,Apache-2.0,Compositional T2I.
+hpsv2,HPSv2,https://github.com/tgxs002/HPSv2,image-gen,Apache-2.0,Human Preference Score v2.
+pickscore,PickScore,https://github.com/yuvalkirstain/PickScore,image-gen,MIT,Preference scoring.
+imagereward,ImageReward,https://github.com/THUDM/ImageReward,image-gen,Apache-2.0,Preference scorer trained on human ratings.
+dsg,DSG,https://github.com/j-min/DSG,image-gen,MIT,Davidsonian scene graph for fine-grained T2I eval.
+vqascore,VQAScore,https://github.com/linzhiqiu/CLIP-FlanT5,image-gen,Apache-2.0,VQA-based T2I alignment.
+vpeval,VPEval,https://github.com/aliasvishnu/VPEval,image-gen,MIT,Programmatic T2I eval.
+fid,FID,https://github.com/mseitzer/pytorch-fid,image-gen,Apache-2.0,Fréchet Inception Distance.
+clip-fid,CLIP-FID,https://github.com/kynkaat/role-of-imagenet,image-gen,MIT,CLIP-based FID variant.
+cmmd,CMMD,https://github.com/sayakpaul/cmmd-pytorch,image-gen,Apache-2.0,Improved FID alternative.
+clip,CLIP,https://github.com/openai/CLIP,"image-gen;multimodal",MIT,OpenAI's vision-text model.
+openclip,OpenCLIP,https://github.com/mlfoundations/open_clip,"image-gen;multimodal",MIT,Open implementations of CLIP.
+dinov2,DINOv2,https://github.com/facebookresearch/dinov2,"image-gen;multimodal",Apache-2.0,Meta's vision foundation model.
+siglip,SigLIP,https://huggingface.co/google/siglip-so400m-patch14-384,"image-gen;multimodal",Apache-2.0,Google's vision-text improvement.
+insightface,InsightFace,https://github.com/deepinsight/insightface,image-gen,MIT,Face recognition library.
+arcface,ArcFace,https://github.com/deepinsight/insightface/tree/master/recognition/arcface_torch,image-gen,MIT,Face recognition method.
+deepface,DeepFace,https://github.com/serengil/deepface,image-gen,MIT,Wraps multiple face recognition backends.
+nudenet,NudeNet,https://github.com/notAI-tech/NudeNet,image-gen,AGPL-3.0,NSFW classifier.
+sd-safety-checker,Stable Diffusion safety checker,https://github.com/CompVis/stable-diffusion,image-gen,CreativeML-OpenRAIL-M,Original safety checker.
+falcons-nsfw,falcons-nsfw,https://huggingface.co/Falconsai/nsfw_image_detection,image-gen,Apache-2.0,Small CNN for NSFW detection.
+geneval,GenEval,https://github.com/djghosh13/geneval,image-gen,MIT,Object-focused T2I eval.
+parti-prompts,PartiPrompts,https://github.com/google-research/parti,image-gen,Apache-2.0,Challenging prompts dataset.
+pick-a-pic,Pick-a-Pic,https://huggingface.co/datasets/yuvalkirstain/pickapic_v2,image-gen,MIT,Preference dataset.
+mmbench,MMBench,https://github.com/open-compass/MMBench,multimodal,Apache-2.0,Comprehensive VLM eval.
+mmmu,MMMU,https://github.com/MMMU-Benchmark/MMMU,multimodal,Apache-2.0,Massive multi-discipline.
+seed-bench,SEED-Bench,https://github.com/AILab-CVC/SEED-Bench,multimodal,Apache-2.0,Generative comprehension eval.
+mathvista,MathVista,https://github.com/lupantech/MathVista,multimodal,CC-BY-SA-4.0,Math reasoning in visual contexts.
+ocrbench,OCRBench,https://github.com/Yuliang-Liu/MultimodalOCR,multimodal,Apache-2.0,OCR-heavy tasks.
+sciencequa,ScienceQA,https://github.com/lupantech/ScienceQA,multimodal,CC-BY-NC-SA,Science QA with images.
+pope,POPE,https://github.com/RUCAIBox/POPE,multimodal,MIT,Object hallucination benchmark.
+hallusionbench,HallusionBench,https://github.com/tianyi-lab/HallusionBench,multimodal,Apache-2.0,Visual hallucination benchmark.
+docvqa,DocVQA,https://www.docvqa.org/,multimodal,Open,Document VQA benchmark.
+infographicvqa,InfographicVQA,https://www.docvqa.org/,multimodal,Open,Infographic understanding.
+chartqa,ChartQA,https://github.com/vis-nlp/ChartQA,multimodal,Apache-2.0,Chart understanding benchmark.
+donut,Donut,https://github.com/clovaai/donut,multimodal,MIT,OCR-free doc understanding.
+audiocaps,AudioCaps,https://github.com/cdjkim/audiocaps,multimodal,MIT,Audio captioning dataset.
+audiobench,AudioBench,https://github.com/AudioLLMs/AudioBench,multimodal,MIT,Comprehensive audio-LM eval.
+dynamic-superb,Dynamic-SUPERB,https://github.com/dynamic-superb/dynamic-superb,multimodal,Apache-2.0,Speech understanding benchmark.
+dreamsim,DreamSim,https://github.com/ssundaram21/dreamsim,"image-gen;multimodal",MIT,Perceptual similarity metric.
+facet,FACET,https://github.com/facebookresearch/FACET,multimodal,CC-BY-NC-4.0,Image classification fairness.
+vlbiasbench,VLBiasBench,https://github.com/jong-cs/VLBiasBench,multimodal,MIT,VL bias eval.
+omnievalkit,OmniEvalKit,https://github.com/OpenBMB/OmniEvalKit,multimodal,Apache-2.0,Modular toolbox across modalities.
+gage,GAGE,https://github.com/HiThink-Research/GAGE,multimodal,Apache-2.0,Unified eval engine for LLMs MLLMs audio diffusion.
+vlmevalkit,VLMEvalKit,https://github.com/open-compass/VLMEvalKit,multimodal,Apache-2.0,Vision-LM benchmark suite.
+lmms-eval,lmms-eval,https://github.com/EvolvingLMMs-Lab/lmms-eval,multimodal,MIT,Large-scale multimodal eval.
+eureka-ml-insights,Eureka ML Insights,https://github.com/microsoft/eureka-ml-insights,"multimodal;summarizer",MIT,Microsoft framework for foundation models.
+clipscore,CLIPScore,https://github.com/jmhessel/clipscore,multimodal,MIT,Vision-text alignment metric.
+blipscore,BLIPScore,https://github.com/salesforce/BLIP,multimodal,BSD-3-Clause,Vision-text alignment metric.
+laion-aesthetic,LAION aesthetic predictor,https://github.com/LAION-AI/aesthetic-predictor,image-gen,MIT,Aesthetic score predictor.
+mosnet,MOSNet,https://github.com/lochenchou/MOSNet,voice,MIT,Predicted MOS metric.
+espeak-ng,eSpeak NG,https://github.com/espeak-ng/espeak-ng,voice,GPL-3.0,Phoneme comparison.
+presidio,Microsoft Presidio,https://github.com/microsoft/presidio,"chatbot;rag;summarizer;voice;translation",MIT,Open-source PII detection and redaction.
+pii-codex,pii-codex,https://github.com/EdyVision/pii-codex,"chatbot;voice",MIT,PII detection toolkit.
+scikit-learn,scikit-learn,https://github.com/scikit-learn/scikit-learn,"classifier;search",BSD-3-Clause,F1 calibration confusion matrix.
+seqeval,seqeval,https://github.com/chakki-works/seqeval,classifier,MIT,Sequence labeling eval.
+netcal,netcal,https://github.com/EFS-OpenSource/calibration-framework,classifier,Apache-2.0,Calibration metrics.
+alibi-detect,Alibi Detect,https://github.com/SeldonIO/alibi-detect,classifier,Apache-2.0,Drift / outlier detection.
+nannyml,NannyML,https://github.com/NannyML/nannyml,classifier,Apache-2.0,Production drift estimation.
+outlines,Outlines,https://github.com/dottxt-ai/outlines,classifier,Apache-2.0,Structured generation (constrained sampling).
+instructor,Instructor,https://github.com/jxnl/instructor,classifier,MIT,Pydantic-typed outputs.
+marvin,Marvin,https://github.com/PrefectHQ/marvin,classifier,Apache-2.0,LLM-as-function with typed outputs.
+textattack,TextAttack,https://github.com/QData/TextAttack,classifier,MIT,Adversarial attacks for NLP.
+checklist,checklist,https://github.com/marcotcr/checklist,classifier,MIT,Behavioral testing for NLP models.
+spacy,spaCy,https://github.com/explosion/spaCy,classifier,MIT,NER and eval.
+ner-eval,NER-Eval,https://github.com/davidsbatista/NER-Evaluation,classifier,MIT,Entity-level evaluation.
+glue,GLUE,https://gluebenchmark.com/,classifier,Open,General language understanding benchmark.
+superglue,SuperGLUE,https://super.gluebenchmark.com/,classifier,Open,Harder GLUE.
+xglue,XGLUE,https://github.com/microsoft/XGLUE,classifier,MIT,Multilingual GLUE.
+clinc150,CLINC150,https://github.com/clinc/oos-eval,classifier,CC-BY-3.0,Intent classification with OOS detection.
+banking77,Banking77,https://huggingface.co/datasets/PolyAI/banking77,classifier,CC-BY-4.0,Banking intent dataset.
+conll-2003,CoNLL-2003,https://huggingface.co/datasets/eriktks/conll2003,classifier,LDC,NER classic dataset.
+ms-marco,MS MARCO,https://github.com/microsoft/MSMARCO-Passage-Ranking,search,Microsoft-Open,Large web search dataset.
+natural-questions,Natural Questions,https://github.com/google-research-datasets/natural-questions,"rag;search",CC-BY-SA-3.0,Search-oriented QA.
+trec-tracks,TREC tracks,https://trec.nist.gov/,search,Open,Yearly research datasets.
+amazon-reviews,Amazon Reviews,https://nijianmo.github.io/amazon/index.html,search,Open,Recommendation dataset.
+movielens,Movielens,https://grouplens.org/datasets/movielens/,search,CC-BY,Recommendation classic.
+asr-leaderboard,ASR Leaderboard,https://huggingface.co/spaces/hf-audio/open_asr_leaderboard,voice,Apache-2.0,Hugging Face ASR benchmark.
+mt-bench,MT-Bench,https://github.com/lm-sys/FastChat,chatbot,Apache-2.0,Multi-turn benchmark.
+wildguard,WildGuard,https://huggingface.co/datasets/allenai/wildguardmix,chatbot,ODC-BY,Refusal / safety dataset.
+toxic-chat,ToxicChat,https://huggingface.co/datasets/lmsys/toxic-chat,chatbot,CC-BY-NC-4.0,Adversarial conversation dataset.
+chatarena,ChatArena,https://lmarena.ai/,chatbot,Apache-2.0,Pairwise human preference platform.
+hh-rlhf,HH-RLHF,https://huggingface.co/datasets/Anthropic/hh-rlhf,chatbot,MIT,Helpful / harmless preference data.
+vader,VADER,https://github.com/cjhutto/vaderSentiment,chatbot,MIT,Lexicon-based sentiment.
+hf-sentiment,HF Sentiment Pipelines,https://huggingface.co/models?pipeline_tag=text-classification,chatbot,Apache-2.0,Many trained sentiment options.
+cnn-dailymail,CNN/DailyMail,https://huggingface.co/datasets/cnn_dailymail,summarizer,Apache-2.0,Classic summarization dataset.
+xsum,XSum,https://huggingface.co/datasets/EdinburghNLP/xsum,summarizer,MIT,Extreme summarization.
+samsum,SAMSum,https://huggingface.co/datasets/Samsung/samsum,summarizer,CC-BY-NC-ND-4.0,Dialogue summarization.
+multi-news,Multi-News,https://huggingface.co/datasets/alexfabbri/multi_news,summarizer,Open,Multi-document summarization.
+scisummnet,ScisummNet,https://huggingface.co/datasets/yale-nlp/SciSummNet,summarizer,Open,Scientific paper summaries.
+financebench,FinanceBench,https://github.com/patronus-ai/financebench,rag,CC-BY-NC,Finance-specific RAG benchmark.
+trivia-qa,TriviaQA,https://github.com/mandarjoshi90/triviaqa,rag,Apache-2.0,Open-domain QA.
+medical-mt-benchmarks,Medical MT benchmarks,https://github.com/aizutour/medical-mt,translation,Apache-2.0,Medical-domain MT eval.
+lextreme,LEXTREME,https://huggingface.co/datasets/joelniklaus/lextreme,translation,CC-BY-4.0,Legal MT eval datasets.
+greptile-evals,Greptile evals,https://github.com/greptileai/eval,code-gen,Apache-2.0,Code-review benchmark.
+crsurvey,CRSurvey,https://github.com/microsoft/cr-survey,code-gen,MIT,Code-review benchmark.
+openhands-bench,OpenHands Benchmarks,https://github.com/All-Hands-AI/OpenHands,"code-gen;agent",MIT,Coding agent benchmark.
+claw-eval,Claw-Eval,https://github.com/claw-eval/claw-eval,agent,Apache-2.0,Human-verified agent tasks.
+smolagents,smolagents,https://github.com/huggingface/smolagents,agent,Apache-2.0,Minimal agent framework.
+langgraph,LangGraph,https://github.com/langchain-ai/langgraph,agent,MIT,Graph orchestration framework.
+crewai,CrewAI,https://github.com/crewAIInc/crewAI,agent,MIT,Role-based agent crews.
+autogen,AutoGen,https://github.com/microsoft/autogen,agent,MIT,Multi-agent conversations.
+mlflow,MLflow,https://github.com/mlflow/mlflow,"chatbot;rag;summarizer;classifier",Apache-2.0,Open source AI engineering platform.
+agenta,Agenta,https://github.com/Agenta-AI/agenta,"chatbot;rag;summarizer",MIT,Open-source LLMOps platform.
+helm,HELM,https://github.com/stanford-crfm/helm,"chatbot;summarizer;classifier",Apache-2.0,Stanford's Holistic Evaluation of LMs.
+alpaca-eval,AlpacaEval,https://github.com/tatsu-lab/alpaca_eval,chatbot,Apache-2.0,Instruction-following auto-evaluator.
+bench,Bench,https://github.com/arthur-ai/bench,"chatbot;classifier",MIT,Arthur AI's LLM eval tool.
+openlit,OpenLIT,https://github.com/openlit/openlit,"chatbot;rag;summarizer",Apache-2.0,OpenTelemetry-native AI observability with evals + guardrails.
+guidellm,GuideLLM,https://github.com/vllm-project/guidellm,"chatbot;classifier",Apache-2.0,Evaluate and enhance LLM deployments.
+vqav2,VQAv2,https://visualqa.org/,multimodal,CC-BY-4.0,Visual QA benchmark.
+gqa,GQA,https://cs.stanford.edu/people/dorarad/gqa/,multimodal,CC-BY-4.0,Compositional VQA.
+textvqa,TextVQA,https://textvqa.org/,multimodal,CC-BY-4.0,Text-in-image VQA.
+countbench,CountBench,https://github.com/teowu/Q-Bench,multimodal,Apache-2.0,Counting benchmark.
+draw-bench,DrawBench,https://imagen.research.google/,image-gen,Open,Google's benchmark prompts.
+brand-new-tool-template,Tool template,,,,Replace this row with a real entry; this row is a placeholder demonstrating the schema.

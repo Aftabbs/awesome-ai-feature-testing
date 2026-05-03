@@ -1,0 +1,30 @@
+{"id": "c001", "text": "What's the cost of my last invoice?", "label": "billing"}
+{"id": "c002", "text": "I need a refund for order 4812 NOW.", "label": "refund"}
+{"id": "c003", "text": "When is my package arriving?", "label": "shipping"}
+{"id": "c004", "text": "The app keeps crashing on Android.", "label": "technical"}
+{"id": "c005", "text": "I want to cancel my subscription.", "label": "cancel"}
+{"id": "c006", "text": "Why was I charged twice?", "label": "billing"}
+{"id": "c007", "text": "Money back please, this product is terrible.", "label": "refund"}
+{"id": "c008", "text": "It's been 12 days, where's my order?", "label": "shipping"}
+{"id": "c009", "text": "Login button is grey, can't sign in.", "label": "technical"}
+{"id": "c010", "text": "Cancel my account immediately.", "label": "cancel"}
+{"id": "c011", "text": "Update my credit card on file.", "label": "billing"}
+{"id": "c012", "text": "Can I exchange this for a different size?", "label": "refund"}
+{"id": "c013", "text": "Tracking link doesn't work.", "label": "shipping"}
+{"id": "c014", "text": "Reset password isn't sending an email.", "label": "technical"}
+{"id": "c015", "text": "How do I downgrade to free tier?", "label": "cancel"}
+{"id": "c016", "text": "Discount code didn't apply.", "label": "billing"}
+{"id": "c017", "text": "I'd like to return the broken item.", "label": "refund"}
+{"id": "c018", "text": "Can I change the delivery address?", "label": "shipping"}
+{"id": "c019", "text": "API returns 500 on this endpoint.", "label": "technical"}
+{"id": "c020", "text": "I no longer want this account.", "label": "cancel"}
+{"id": "c021", "text": "When will my next bill come?", "label": "billing"}
+{"id": "c022", "text": "Reembolso por favor, no funcionó.", "label": "refund"}
+{"id": "c023", "text": "Express shipping option?", "label": "shipping"}
+{"id": "c024", "text": "Notifications stopped working after the update.", "label": "technical"}
+{"id": "c025", "text": "Stop billing me, close the account.", "label": "cancel"}
+{"id": "c026", "text": "Pricing for the enterprise plan?", "label": "billing"}
+{"id": "c027", "text": "I want my money back.", "label": "refund"}
+{"id": "c028", "text": "Can you ship to PO Boxes?", "label": "shipping"}
+{"id": "c029", "text": "Two-factor auth isn't accepting my code.", "label": "technical"}
+{"id": "c030", "text": "How do I delete my account permanently?", "label": "cancel"}

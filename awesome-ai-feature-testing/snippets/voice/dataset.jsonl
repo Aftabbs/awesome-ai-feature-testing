@@ -1,0 +1,5 @@
+{"id": "case_001", "audio_path": "samples/01.wav", "gold_transcript": "the quick brown fox jumps over the lazy dog"}
+{"id": "case_002", "audio_path": "samples/02.wav", "gold_transcript": "please cancel my order number forty eight twelve"}
+{"id": "case_003", "audio_path": "samples/03.wav", "gold_transcript": "schedule a follow up for tomorrow at nine a m"}
+{"id": "case_004", "audio_path": "samples/04.wav", "gold_transcript": "mark this work order complete and notify the customer"}
+{"id": "case_005", "audio_path": "samples/05.wav", "gold_transcript": "what is the cost of the pro plan with annual billing"}
