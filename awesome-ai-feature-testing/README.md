@@ -1,4 +1,4 @@
-# Awesome AI Feature Testing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re)
+# Awesome AI Feature Testing [![Awesome](https://awesome.re/badge.svg)](https://awesome.re) 
  
 > Testing patterns, tools, prompts, and eval examples — organized by AI feature, not by tool category. 
 
