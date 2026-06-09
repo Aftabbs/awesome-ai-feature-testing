@@ -8,7 +8,7 @@
 
 Most "awesome AI eval" lists are organized by **tool**: here are 80 evaluation libraries, pick one. That's the wrong question. The right question is: **I'm building a chatbot — what do I test, how, with what?**
 
-This list answers that question. Eleven categories, each with: testing patterns, recommended tools, sample prompts and golden datasets, eval rubrics, and a failure-mode catalog.
+This list answers that question. Eleven categories, each with: testing patterns, recommended tools, sample prompts and golden datasets, eval rubrics, and a failure-mode catalog. 
 
 If you ship AI features, this is your starting page.
 
